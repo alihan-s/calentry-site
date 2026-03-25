@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — CalEntry</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f9f9f9; color: #1a1a1a; }
+    header { background: #fff; border-bottom: 1px solid #eee; padding: 20px 40px; }
+    header a { font-size: 20px; font-weight: 700; text-decoration: none; color: #1a1a1a; }
+    .container { max-width: 720px; margin: 48px auto; padding: 0 24px 80px; }
+    h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+    .updated { color: #888; font-size: 14px; margin-bottom: 40px; }
+    h2 { font-size: 17px; font-weight: 700; margin: 32px 0 8px; }
+    p, li { font-size: 15px; color: #444; line-height: 1.7; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 4px; }
+    footer { text-align: center; padding: 32px 24px; color: #999; font-size: 14px; border-top: 1px solid #eee; }
+    footer a { color: #999; text-decoration: none; margin: 0 12px; }
+  </style>
+</head>
+<body>
+  <header><a href="/">CalEntry</a></header>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: March 13, 2026</p>
+
+    <h2>1. Data Controller</h2>
+    <p>CalEntry is operated as an independent app. For privacy inquiries, contact us at <a href="mailto:privacy@calentry.org">privacy@calentry.org</a>.</p>
+
+    <h2>2. Data We Collect</h2>
+    <ul>
+      <li>Device identifier (randomly generated, not linked to your real identity)</li>
+      <li>Photos you submit for analysis — processed in real time and never stored on our servers</li>
+      <li>Calendar event data you choose to save — stored locally on your device only</li>
+      <li>Authentication data if you sign in with Apple (name, email)</li>
+      <li>App usage metadata (plan type, scan count) stored in our database (Supabase)</li>
+    </ul>
+
+    <h2>3. Legal Basis for Processing (GDPR Art. 6)</h2>
+    <ul>
+      <li>Contract performance: processing is necessary to provide the service you requested</li>
+      <li>Legitimate interest: anonymous usage metrics to improve the app</li>
+      <li>Consent: when you grant calendar or notification permissions</li>
+    </ul>
+
+    <h2>4. How We Use Your Data</h2>
+    <p>Photos are sent to Anthropic's Claude API solely to extract event information, then immediately discarded — we never store, index, or share your photos. Event data is saved only on your device via iOS Calendar. Account data (name, email, scan balance) is stored in our Supabase database to enable cross-device access.</p>
+
+    <h2>5. Third-Party Processors</h2>
+    <ul>
+      <li><strong>Anthropic (Claude API)</strong> — AI event extraction. Data: photo content. Retention: none after response.</li>
+      <li><strong>Supabase</strong> — backend database. Data: device ID, scan count, plan type, auth identity. Location: EU (Frankfurt).</li>
+      <li><strong>Firebase Crashlytics (Google)</strong> — crash reporting. Data: device model, OS version, app version, crash stack traces. No personally identifiable information is collected. Data location: United States.</li>
+      <li><strong>Apple / Google</strong> — authentication only, subject to their own privacy policies.</li>
+    </ul>
+
+    <h2>6. Data Retention</h2>
+    <ul>
+      <li>Photos: deleted immediately after AI processing (never persisted)</li>
+      <li>Account data: retained while your account is active; deleted upon account deletion request</li>
+      <li>Local calendar events: controlled entirely by you via the iOS Calendar app</li>
+    </ul>
+
+    <h2>7. International Transfers</h2>
+    <p>Anthropic's servers are located in the United States. Transfers are covered by Standard Contractual Clauses (SCCs) as required by GDPR Chapter V.</p>
+
+    <h2>8. Your Rights (GDPR Art. 15–22)</h2>
+    <p>You have the right to: access your data · correct inaccurate data · request erasure ('right to be forgotten') · restrict processing · data portability · object to processing · withdraw consent at any time.</p>
+    <p style="margin-top:8px">To exercise any right, contact <a href="mailto:privacy@calentry.org">privacy@calentry.org</a>. We will respond within 30 days.</p>
+
+    <h2>9. Children</h2>
+    <p>CalEntry is not directed at children under 16. We do not knowingly collect data from minors.</p>
+
+    <h2>10. Changes</h2>
+    <p>We will notify you of material changes via an in-app notice. Continued use after the effective date constitutes acceptance.</p>
+  </div>
+  <footer>
+    <a href="/">Home</a>
+    <a href="/terms">Terms of Service</a>
+    <br><br>&copy; 2026 CalEntry
+  </footer>
+</body>
+</html>
