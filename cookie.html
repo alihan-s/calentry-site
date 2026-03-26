@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f9f9f9; color: #1a1a1a; }
+header { background: #fff; border-bottom: 1px solid #eee; padding: 20px 40px; }
+header a { font-size: 20px; font-weight: 700; text-decoration: none; color: #1a1a1a; }
+.container { max-width: 720px; margin: 48px auto; padding: 0 24px 80px; }
+h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+.updated { color: #888; font-size: 14px; margin-bottom: 40px; }
+h2 { font-size: 17px; font-weight: 700; margin: 32px 0 8px; }
+p, li { font-size: 15px; color: #444; line-height: 1.7; }
+ul { padding-left: 20px; }
+li { margin-bottom: 4px; }
+footer { text-align: center; padding: 32px 24px; color: #999; font-size: 14px; border-top: 1px solid #eee; }
+footer a { color: #999; text-decoration: none; margin: 0 12px; }
+</style>
+</head>
+<body>
+<header>
+<a href="/">CalEntry</a>
+</header>
+<div class="container">
+<h1>Cookie Policy</h1>
+<p class="updated">Last updated: March 26, 2026</p>
+
+<h2>Mobile App & Local Storage</h2>
+<p>CalEntry is a native iOS app. We do not use browser cookies. The equivalent mechanisms we use on your device are described below.</p>
+
+<h2>1. Essential Local Storage</h2>
+<p>We store your preferences (default calendar, event language, notification settings, color scheme) and your scan credit cache in iOS UserDefaults. These are strictly necessary for the app to function and cannot be disabled.</p>
+
+<h2>2. Device Identifier (Keychain)</h2>
+<p>A randomly generated UUID is stored securely in the iOS Keychain. This identifier is used to associate your scan credits and subscription status with your device. It is not linked to your name, email address, or any other personally identifiable information. This identifier persists across app reinstalls to protect your purchased credits.</p>
+
+<h2>3. Anonymous Session Token (Keychain)</h2>
+<p>An anonymous session token is stored securely in the iOS Keychain via Supabase Auth. This token is used to authenticate requests to our backend and expires automatically. It is refreshed each time you open the app.</p>
+
+<h2>4. Crash Reporting</h2>
+<p>We use Firebase Crashlytics (Google) to collect crash reports. Crashlytics stores diagnostic data (device model, OS version, app version, crash stack traces) on Google's servers. It does not collect personally identifiable information, photos, or calendar data. No advertising IDs (IDFA) or behavioral tracking data are collected.</p>
+
+<h2>5. No Third-Party Advertising</h2>
+<p>CalEntry contains no advertising and no ad-tracking SDKs. Your data is never sold or shared for advertising purposes.</p>
+
+<h2>6. Managing Your Data</h2>
+<p>You can clear all local app data by deleting and reinstalling the app. To delete your account data from our servers, use Settings → Delete Account within the app, or contact us at <a href="mailto:calentrysupport@gmail.com">calentrysupport@gmail.com</a>.</p>
+</div>
+
+<footer>
+<a href="/">Home</a> <a href="/privacy">Privacy Policy</a> <a href="/terms">Terms of Service</a>
+<p>© 2026 CalEntry</p>
+</footer>
+</body>
+</html>
